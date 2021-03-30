@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myAppBar"
+    android:background="@color/teal_700"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="WhatsApp"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <ImageView
+        android:id="@+id/dots"
+        android:layout_width="30dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_baseline_menu_24"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp">
+    </ImageView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_toLeftOf="@id/dots"
+        android:layout_height="58dp"
+        android:src="@drawable/ic_search"
+        android:layout_marginRight="3dp">
+    </ImageView>
+
+</RelativeLayout>
+</androidx.appcompat.widget.Toolbar>
